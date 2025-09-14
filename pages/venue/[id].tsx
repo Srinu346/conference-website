@@ -69,12 +69,12 @@ function Venue({ city }: IVenue) {
           backgroundPosition: 'center 30%',
           backgroundRepeat: 'no-repeat',
         }}
-        className={`w-full h-[500px] sm:h-[auto] ${city.name == 'Online' ? 'bg-online' : ''}`}
+        className={`w-full h-screen sm:h-[auto] ${city.name == 'Online' ? 'bg-online' : ''}`}
       >
-        <div className="w-full h-full kinda-dark items-center flex flex-col justify-between">
+        <div className="w-full h-full kinda-dark items-center flex flex-col justify-center">
           <div className="mt-[68px] container text-center flex flex-col items-center w-[1100px] lg:w-full sm:text-center">
             {city.name == 'Online' ? (
-              <Heading className={textColor}>
+              <Heading className={textColor}> 
                 {city.name} {city.country}
               </Heading>
             ) : (
